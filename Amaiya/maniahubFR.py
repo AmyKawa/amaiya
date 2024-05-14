@@ -54,29 +54,6 @@ async def help(ctx, category: str):
 			
 #------------------------------------------Osu commands--------------------------------------------
 
-# ~ @slash.slash(
-	# ~ name="osudoxx",
-	# ~ description="Get absolutely doxxed",
-	# ~ options = [
-		# ~ {
-			# ~ "name": "username",
-			# ~ "description": "User you want to search",
-			# ~ "type": SlashCommandOptionType.STRING,
-			# ~ "required": True,
-		# ~ }
-	# ~ ]
-# ~ )
-# ~ async def doxx(ctx, username: str):
-	# ~ data = get_user_data(token, username)
-	# ~ pretty_content = json.dumps(data, indent=4)
-
-	# ~ file_name = username + '_info.txt'
-	# ~ with open(file_name, "w") as file:
-		# ~ file.write(pretty_content)
-
-	# ~ with open(file_name, "rb") as file:
-		# ~ await ctx.send(file=discord.File(file, file_name))
-
 @slash.slash(
 	name="mqf_add",
 	description="Add your map to the Modding Quickfire Queue",
